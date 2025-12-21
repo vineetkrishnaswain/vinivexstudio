@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="google-site-verification" content="iLUi82GE6e8J6ajVT-l_xSgJxguBA3ZABCFrQYyWZuA" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Vinivex Studio - Your Vision, Our Design</title>
+  
+  <meta name="description" content="Vinivex Studio offers luxury web design, digital solutions, and creative graphic designs. Contact us for custom projects.">
+  
+  <meta name="keywords" content="Vinivex Studio, luxury web design, website development, digital solutions, creative graphic designs, web design India">
+  
+  <meta name="author" content="Vineet Krishna Swain">
+  
+  <!-- Open Graph for social media previews -->
+  <meta property="og:title" content="Vinivex Studio - Luxury Web Design & Digital Solutions">
+  <meta property="og:description" content="Vinivex Studio offers luxury web design, digital solutions, and creative graphic designs. Contact us for custom projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vineetkrishnaswain.github.io/vinivexstudio/">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="1.jpeg" type="image/x-icon">
+  
+  <!-- Optional: robots.txt for search engines -->
+  <meta name="robots" content="index, follow">
+  
+</head>
+<style>
+  :root{
+    --bg-1:#0b0c0f;
+    --bg-2:#111217;
+    --accentA:#f2994a;
+    --accentB:#48b1bf;
+    --muted:rgba(230,235,241,0.78);
+    --muted-2:rgba(230,235,241,0.56);
+    --glass:rgba(255,255,255,0.03);
+    --radius:12px;
+    --maxw:1100px;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,var(--bg-1),var(--bg-2));color:#e9eef7;-webkit-font-smoothing:antialiased;}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:28px}
+  header{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:10px 0;position:sticky;top:0;background:linear-gradient(180deg,rgba(0,0,0,0.05),transparent);backdrop-filter:blur(4px);z-index:50}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand img{width:55px;height:55px;border-radius:10px;object-fit:contain;box-shadow:0 10px 30px rgba(72,177,191,0.06)}
+  .brand h1{font-family:Poppins,Inter;font-size:18px;margin:0}
+  nav ul{display:flex;gap:16px;list-style:none;margin:0;padding:0;align-items:center}
+  nav a{font-weight:600;opacity:0.95}
+  .cta{background:linear-gradient(90deg,var(--accentA),var(--accentB));padding:10px 14px;border-radius:10px;color:#071017;font-weight:700;box-shadow:0 12px 36px rgba(72,177,191,0.12)}
+  /* HERO */
+  .hero{display:flex;gap:36px;align-items:center;padding:56px 0}
+  .hero-left{flex:1;max-width:640px}
+  .kicker{display:inline-block;padding:6px 10px;border-radius:999px;background:linear-gradient(90deg,rgba(242,153,74,0.10),rgba(72,177,191,0.10));color:var(--accentA);font-weight:700;font-size:13px;margin-bottom:18px}
+  .title{font-family:Poppins;font-size:40px;line-height:1.03;margin:0 0 12px}
+  .tagline{color:var(--muted-2);font-size:16px;margin:0 0 18px}
+  .btn-row{display:flex;gap:12px;margin-top:10px}
+  .btn{padding:12px 16px;border-radius:10px;font-weight:700;cursor:pointer;border:0}
+  .btn-primary{background:linear-gradient(90deg,var(--accentA),var(--accentB));color:#071017}
+  .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+  .glow{position:absolute;border-radius:50%;filter:blur(80px);opacity:0.9}
+  .glow-a{width:360px;height:360px;left:-40px;top:-40px;background:radial-gradient(circle at 30% 30%, rgba(242,153,74,0.22), transparent 40%)}
+  .glow-b{width:300px;height:300px;right:-60px;bottom:-20px;background:radial-gradient(circle at 40% 40%, rgba(72,177,191,0.22), transparent 40%)}
+  .logo-preview{width:230px}
+  /* SECTIONS */
+  section{padding:54px 0;border-top:1px solid rgba(255,255,255,0.02)}
+  h3.section-title{font-family:Poppins;font-size:22px;margin:0 0 10px}
+  .muted{color:var(--muted-2)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+  .card{background:linear-gradient(180deg,var(--glass),rgba(255,255,255,0.01));padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.45);border:1px solid rgba(255,255,255,0.02)}
+  .card h4{margin:0 0 8px}
+  .card p{margin:0;color:var(--muted-2);font-size:14px}
+  .portfolio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .work{border-radius:10px;overflow:hidden;background:#0b0b0b;min-height:160px;display:flex;flex-direction:column}
+  .work img{width:100%;height:140px;object-fit:cover}
+  .work .meta{padding:12px}
+  .contact-row{display:flex;gap:18px;align-items:stretch;flex-wrap:wrap}
+  .contact-left{flex:1;min-width:260px}
+  .contact-right{width:360px;min-width:260px}
+  input,textarea{width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:rgba(255,255,255,0.02);color:inherit}
+  textarea{min-height:130px;resize:vertical}
+  .small{font-size:13px;color:var(--muted-2)}
+  footer{padding:22px 0;color:var(--muted-2);border-top:1px solid rgba(255,255,255,0.02)}
+  /* PRICING */
+  .pricing-row{display:flex;gap:16px;flex-wrap:wrap}
+  .price-card{flex:0 0 200px;padding:16px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.02)}
+  .policy{font-size:14px;color:var(--muted-2);line-height:1.45;margin-top:12px}
+  /* responsive */
+  @media(max-width:920px){
+    .hero{flex-direction:column;align-items:flex-start}
+    .hero-right{width:100%;height:260px;margin-top:18px}
+    .brand img{width:48px;height:48px}
+    .title{font-size:32px}
+  }
+</style>
+<body>
+<div class="wrap">
+ <header>
+  <div class="brand">
+    <img src="1.jpeg" alt="Ventro logo" onerror="this.style.visibility='hidden'">
+    <div>
+      <h1>Vinivex Studio</h1>
+      <div class="small muted">Your Vision, Our Design</div>
+    </div>
+  </div>
+
+  <!-- Menu Button -->
+  <div style="position:relative;">
+    <button id="menuBtn"><b>Explore</b></button>
+
+    <!-- Dropdown vertical menu -->
+    <div id="menuContent" class="menu-column">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<style>
+  #menuBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(to right, #f2994a, #48b1bf);
+    border-radius: 12px;
+    border: none;
+    color: #071017;
+    font-weight: 700;
+  }
+
+  .menu-column {
+    display: none;
+    flex-direction: column; /* vertical layout */
+    gap: 10px;
+    margin-top: 10px;
+    position: absolute; /* dropdown effect */
+    right: 0;
+    background: #111217;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    z-index: 100;
+  }
+
+  .menu-column a {
+    text-decoration: none;
+    padding: 8px 12px;
+    background: linear-gradient(to right,blue,aqua);
+    color: white;
+    border-radius: 6px;
+  }
+
+  .menu-column a:hover {
+    background: linear-gradient(to right,aqua,blue);
+  }
+</style>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('menuContent');
+
+  btn.addEventListener('click', () => {
+    menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+  });
+
+  // Optional: Close menu if clicked outside
+  document.addEventListener('click', (e) => {
+    if (!btn.contains(e.target) && !menu.contains(e.target)) {
+      menu.style.display = 'none';
+    }
+  });
+  document.addEventListener('click', function(e) {
+  const menu = document.getElementById('menuContent');
+  const btn = document.getElementById('menuBtn');
+
+  if (!btn.contains(e.target) && !menu.contains(e.target)) {
+    menu.style.display = 'none';
+  }
+});
+</script>
+        </header>  
+            <main id="home">
+    <div class="hero">
+      <div class="hero-left">
+        <span class="kicker">World Wide</span>
+        <h2 class="title">We turn ideas into simple, beautiful Designs!</h2>
+        <p class="tagline">Vinivex Studio builds clean websites, banners and quick digital fixes for students, creators and local businesses. Fast delivery. Honest pricing.</p>
+        <div class="btn-row">
+          <button class="btn btn-primary" onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">View Work</button>
+          <button class="btn btn-ghost" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get a Quote</button>
+        </div>
+        <div style="margin-top:16px;color:var(--muted-2);font-size:13px">Made by Vinivex Studio -- Vineet Krishna Swain (Founder)</div>
+      </div>
+
+      
+        <img height="250vh";width="auto"; align="right" src="logo.jpeg" alt="Vinivex logo">
+    </div>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <h3 class="section-title">Services we provide</h3>
+      <p class="muted">Practical services you can rely on today</p>
+      <div class="grid" style="margin-top:14px">
+        <div class="card">
+          <h4>Website creation</h4>
+          <p>Simple, responsive websites: portfolio pages, small business sites and landing pages built with clean HTML, CSS and lightweight effects.</p>
+        </div>
+        <div class="card">
+          <h4>Logo & banner design</h4>
+          <p>AI-assisted logo ideas, banners, posters and social graphics delivered in PNG/JPG formats for web and print.</p>
+        </div>
+        <div class="card">
+          <h4>Small fixes & maintenance</h4>
+          <p>Quick fixes, content updates, and small technical help for existing websites. Fast turnaround.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:18px">
+        <h4 class="section-title">What we are learning</h4>
+        <p class="muted">We are actively training in game development, mobile app development and AI projects so we can offer more services soon.</p>
+      </div>
+    </section>
+<!-- PORTFOLIO -->
+    <section id="portfolio">
+      <h3 class="section-title">Portfolio -- selected work</h3>
+      <p class="muted">Demo projects and small client jobs. Drag any sample to the new tab to view.</p>
+      <div class="portfolio-grid" style="margin-top:14px">
+        <div class="work">
+          <img src="2.jpeg" alt="Project 1" onerror="this.style.background='#151515'">
+          <div class="meta">
+            <strong>Simple Business Landing</strong>
+            <div class="muted" style="margin-top:6px;font-size:13px">Responsive landing page with contact form</div>
+          </div>
+        </div>
+        
+      
+        <div class="work">
+          <img src="3.jpeg" alt="Project 2" onerror="this.style.background='#151515'">
+          <div class="meta">
+            <strong>Banner & Poster</strong>
+            <div class="muted" style="margin-top:6px;font-size:13px">Event poster and social graphics</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h3 class="section-title">About Vinivex Studio</h3>
+      <p class="muted">Vinivex Studio exists to help people bring their ideas online. We are a small creative team focused on practical digital solutions -- clean websites, helpful graphics and quick digital fixes. We believe in honest work, learning every day and delivering what we promise.</p>
+
+      <div style="display:flex;gap:18px;align-items:flex-start;margin-top:18px;flex-wrap:wrap">
+        <div class="card" style="flex:0 0 320px">
+          <h4>Our process</h4>
+          <p class="muted">1 Requirement - 2 Design draft - 3 Build - 4 Review - 5 Final delivery</p>
+        </div>
+        <div class="card" style="flex:1">
+          <h4>Why choose us</h4>
+          <p class="muted">Fast turnarounds, clear prices, and simple communication. Ideal for students, creators and small businesses who need honest, affordable digital work.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing">
+      <h3 class="section-title">Pricing & Payment policy</h3>
+      <p class="muted">Prices depend on the project scope. Typical ranges for simple work:</p>
+      <div class="pricing-row" style="margin-top:12px">
+        <div class="price-card">
+          <h4>Landing page</h4>
+          <p class="muted">₹300 - ₹700</p>
+        </div>
+        <div class="price-card">
+          <h4>Portfolio site</h4>
+          <p class="muted">₹500 - ₹1200</p>
+        </div>
+        <div class="price-card">
+          <h4>Banner / Poster</h4>
+          <p class="muted">₹50 - ₹300</p>
+        </div>
+      </div>
+
+      <div class="policy">
+        <strong>Payment rules</strong>
+        <ul>
+          <li>50% advance required to start</li>
+          <li>Final 50% due on approval before handover</li>
+          <li>We provide demo previews and watermark-protected previews before final payment</li>
+        </ul>
+      </div>
+    </section>
+
+   <!-- CONTACT -->
+<section id="contact">
+  <h3 class="section-title">Contact</h3>
+  <p class="muted">Send a quick brief or request a quote. We reply as soon as possible.</p>
+  <div class="contact-row" style="margin-top:14px">
+    <!-- Left Card -->
+    <div class="contact-left">
+      <div class="card">
+        <div style="display:flex;align-items:center;gap:12px">
+          <div style="width:64px;height:64px;border-radius:8px;background:linear-gradient(90deg,var(--accentA),var(--accentB));display:flex;align-items:center;justify-content:center;font-weight:700">VS</div>
+          <div>
+            <div style="font-weight:700">Vinivex Studio</div>
+            <div class="small muted">Vineet Krishna Swain -- Founder</div>
+          </div>
+        </div>
+        <div style="margin-top:12px" class="small muted">
+          Email: <a href="mailto:vineetkrishnaswain@gmail.com">vineetkrishnaswain@gmail.com</a><br>
+          Discord: <span class="small muted">vineetkrishnaswain_14854</span><br>
+          Telegram: <span class="small muted">I don't have</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Card / Form -->
+    <div class="contact-right">
+      <div class="card">
+        <form id="contactForm" onsubmit="submitForm(event)">
+          <label class="small">Your name</label>
+          <input id="name" name="name" required placeholder="Full name" />
+          <div style="height:8px"></div>
+          <label class="small">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com" />
+          <div style="height:8px"></div>
+          <label class="small">Contact No.</label>
+          <input id="number" name="number" required placeholder="+ No." />
+          <div style="height:8px"></div>
+          <label class="small">Message / Brief</label>
+          <textarea id="message" name="message" required placeholder="Describe the project or request"></textarea>
+          <div style="height:12px"></div>
+          <div style="display:flex;gap:8px;align-items:center">
+            <button class="btn btn-primary" type="submit">Send Request</button>
+            <button class="btn btn-ghost" type="button" onclick="resetForm()">Reset</button>
+          </div>
+          <div id="formStatus" style="margin-top:10px;font-size:13px;color:var(--muted-2)"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function submitForm(e){
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const number = document.getElementById('number').value.trim();
+    const message = document.getElementById('message').value.trim();
+    const status = document.getElementById('formStatus');
+
+    if(!name || !email || !message){ 
+      status.textContent = 'Please fill all fields.'; 
+      return; 
+    }
+
+    const subject = encodeURIComponent('E-Mail for creating an website for ' + name);
+    const body = encodeURIComponent(
+      '    Name: ' + name +
+      '    Contact No.: ' + number +
+      '    Email: ' + email +
+      '    Message: ' + message
+    );
+
+    window.location.href = 'mailto:vineetkrishnaswain@gmail.com?subject=' + subject + '&body=' + body;
+    status.textContent = 'Opening your email client...';
+  }
+
+  function resetForm(){
+    document.getElementById('contactForm').reset(); 
+    document.getElementById('formStatus').textContent='';
+  }
+</script>
+<footer><p>&copy; 2025 Vinivex Studio. All rights reserved.</p></footer>
+</body>
+</html>
