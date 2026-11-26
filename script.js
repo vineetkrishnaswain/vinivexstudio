@@ -1,6 +1,6 @@
 // Vinivex Studio — vanilla JavaScript interactions
 // Replace the placeholder email below before publishing.
-const BUSINESS_EMAIL = "YOUR_EMAIL_HERE";
+const BUSINESS_EMAIL = "vineetkrishnaswain@gmail.com";
 
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
